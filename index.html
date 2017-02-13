@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>个人管理系统</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1><i class="fa fa-calendar"></i> <span>To Do</span></h1>
+    </div>
+    <div class="main">
+        <div class="left_section ">
+            <div class=" all all_tasks">
+                <i class="fa fa-th"></i> 
+                所有任务&nbsp;(<span>1</span>)
+            </div>
+            <div class="all_tasks">
+                <i class="fa fa-list"></i> 
+                <span>分类列表</span>
+            </div>
+            <ul id="taskL">
+
+               <!-- <li>
+                    <div  class="mainClass">
+                        <i class="fa fa-folder-open"></i> 
+                        <span>默认主分类</span>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="childClass">
+                                <i class="fa fa-file-text"></i> 
+                                <span>默认子分类</span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div  class="mainClass">
+                        <i class="fa fa-folder-open"></i> 
+                        <span>主分类1</span>
+                        <i class="fa fa-trash-o"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="childClass">
+                                <i class="fa fa-file-text"></i> 
+                                <span>子分类1</span>
+                                <i class="fa fa-trash-o"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="childClass">
+                                <i class="fa fa-file-text"></i> 
+                                <span>子分类2</span>
+                                <i class="fa fa-trash-o"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+-->
+            </ul>
+            <div class="addClass">
+                <i class="fa  fa-plus"></i>
+            </div>
+        </div>
+        <div class="mid_section">
+            <div class="mid_header">
+                <button id="all" >所有</button>
+                <button id="unfinished"  >未完成</button>
+                <button id="finished"  >已完成</button>
+            </div>
+            <div class="taskList">
+<!--
+                <ul>
+                    <li><div class="listDate" >日期</div>
+                        <div class="listTitle">标题</div>
+                    </li>
+                </ul>
+-->
+            </div>
+            <div class="addTask">
+                <i class="fa  fa-plus"></i>
+            </div>
+        </div>
+        <div class="right right_section1">
+            <div id="title_task">
+                <span>任务标题：</span>
+                <div class="check_pencil">
+                    <i class="fa  fa-check-square-o"></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa  fa-pencil"></i>
+                </div>
+            </div>
+            <div id="date_task">
+                任务日期：
+            </div>
+            <div id="content_task">
+
+            </div>
+        </div>
+        <div class="right right_section2">
+            <div id="title_task">
+                <span>任务标题：</span>
+                <input class="inputTask" type="text" placeholder="请输入任务标题">
+            </div>
+            <div id="date_task">
+                任务日期：
+                <input class="inputTask" type="date">
+            </div>
+            <div id="content_task">
+                <textarea></textarea>
+                <div class="button2">
+                    <button class="save">保存</button>
+                    <button class="concel">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cover">
+        <div class="card">
+            <h1 class="cardHeader">新增分类</h1>
+            <div class="select">
+                选择主分类：
+                <select>
+                    <option mainCateId='-1'>新增主分类</option>
+                    <option mainCateId='0'>默认主分类</option>
+                </select>
+            </div>
+            <div class="newClassName">
+                新分类名称：
+                <input placeholder="请在此输入新分类名称">
+            </div>
+            <button class="sure">确认</button><button class="concel">取消</button>
+        </div>
+    </div>
+    
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/util.js"></script>
+    
+</body>
+</html>

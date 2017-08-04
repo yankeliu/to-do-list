@@ -445,25 +445,10 @@ function initDateBase(){
         pid:0,
         name:'使用说明',
         finish:true,
-        date:'2016-01-12',
+        date:'2017-02-12',
         content:'左侧为分类列表 右侧为当前分类下的任务列表 右侧为任务详情 可以添加删除分类，添加任务，修改任务，以及给任务标记是否完成等功能 byLiu'
         },
-        /*{
-        id:1,
-        pid:1,
-        name:'标题1',
-        finish:false,
-        date:'2016-01-13',
-        content:'rdhjftyjbh'
-        },
-        {
-        id:2,
-        pid:2,
-        name:'标题2',
-        finish:false,
-        date:'2016-01-12',
-        content:'内容rdhjftyjbh'
-        }*/
+       
     ];
     /*var mains=returnMainCate();
     var childs=returnChildCateL();
